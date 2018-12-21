@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup aft rter loading the view, typically from a nib.t
     }
 //덧셈을 누른다.
     @IBAction func addButtonTouched(_ sender: UIButton) {
@@ -27,11 +27,11 @@ class ViewController: UIViewController {
         let textX:String = xTextField.text ?? "0"
         let x:Int = Int(textX) ?? 0
         
-        
+    
         
         
         //yTextField에 있는 text값(String)을 상수 y(Int)에 넣는다
-         let textY:String = yTextField.text ?? "0"
+        let textY:String = yTextField.text ?? "0"
         let y:Int = Int(textY) ?? 0
         
         
