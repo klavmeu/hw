@@ -73,7 +73,7 @@ class ViewController: UIViewController {
         let x:Int = Int(textX) ?? 0
         let textY:String = yTextField.text ?? "0"
         let y:Int = Int(textY) ?? 0
-        let result:Int = x / y
+        let result:Int = x / ys
         resultLabel.text = String(result)
     }
     
