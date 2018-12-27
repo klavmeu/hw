@@ -27,7 +27,7 @@ class ViewController: UIViewController {
         let y:Int = Int(textY) ?? 0
         let result:Int = x / y
         resultLabel.text = String(result)
-        let secondResult:Int = x - y * result
+        let secondResult:Int = x % y
         secondResultLabel.text = String(secondResult)
         
     }

@@ -68,7 +68,7 @@ print(printRecipt)*/
 
 func printReceipt(menuName:String) {
      print("==== 영수증 ====")
-    print("주문한 메뉴 : \(menuName)")
+     print("주문한 메뉴 : \(menuName)")
 
 /*print(menuName) => \거 쓸 줄 모르면 이렇게 따로따로 */
     print("==============")
