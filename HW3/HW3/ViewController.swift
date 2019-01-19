@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var xTextField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
+    var result:Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,12 +24,13 @@ class ViewController: UIViewController {
         
         //값을 계속해서 더해가야 하는데 어떻게 해야할 지 모르겠어요
         //입력된 숫자들을 배열 속에 넣어서 그것들을 다 더해야 해요??
-        var result:Int = x + x + x
+        result = result + x
         
         if x == 0 {
             let result:Int = x + x
+            resultLabel.text = String(result)
         }
-        resultLabel.text = String(result)
+        
         
     }
     

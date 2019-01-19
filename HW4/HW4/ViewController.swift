@@ -23,12 +23,19 @@ class ViewController: UIViewController {
         let x:Int = Int(textX) ?? 0
         
         //구구단 클래스를 만들어야 하는 걸까요..?????????
-        func multiplicationTable (x:Int) -> Int {
-            let result:Int =
-            return result
+    
+            var result:String = ""
+            for i in 0..<10 {
+                result = String((i+1)*9) + " " + result
+            }
+            resultLabel.text = result
             
-        }
+        
     }
     
 }
+//구구단 보기
 
+/*var row:Int
+ 
+ for i...

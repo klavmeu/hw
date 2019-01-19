@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var choco:Dog = Dog(furColor : "초코색", eyesColor : "초코 눈색")
+   // var choco:Dog = Dog()
+    var choco:JinDoDog = JinDoDog()
     
     @IBOutlet weak var hungerLabel: UILabel!
     @IBOutlet weak var furColorLabel: UILabel!
@@ -19,12 +20,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        //let work Dog's coding and then do my things
+        
     }
     
     
     @IBAction func barkBtnTouched(_ sender: UIButton) {
         choco.bark()
         applyDogStatus(aDog : choco)
+        
+        print(choco.koreaBark())
     }
     
     

@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var xTextField: UITextField!
     @IBOutlet weak var resultLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -22,16 +23,27 @@ class ViewController: UIViewController {
     
     @IBAction func resultBtnTouched(_ sender: UIButton) {
         let textX:String = xTextField.text ?? "0"
-        let x:UInt = UInt(textX) ?? 0
-        
-        func multiple (x:UInt) -> UInt{
-            var result:UInt = 3 * (x - (x - 1))
-        
-            
-            return result
-            resultLabel.text = String(result)
+        let x:Int = Int(textX) ?? 0
+        resultLabel.text = String(multiple(x: x))
+    }
+    func multiple (x:Int) -> String {
+        var result:String = ""
+        for i in 0..<x {
+            result = result + "  " + String((i+1)*3)
         }
+        return result
+        
     }
     
 }
 
+//반복문으로
+/*@IBAction func resultBtnTouched(_ sender: UIButton) {
+ let textX:String = xTextField.text ?? "0"
+ let x:Int = Int(textX) ?? 0
+ 
+ var result:String = ""
+ for i in 0..<x {
+ result = result + "  " + String((i+1)*3)
+ }
+ return result*/
